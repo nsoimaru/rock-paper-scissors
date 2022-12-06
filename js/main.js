@@ -12,16 +12,16 @@ let winner = "";
 
 // Initiate the game
 
-game = () => {
-    // Ask user if they want to play
-    const answer = confirm('Do you want to play \nRock Paper Scissor game?')
-    console.log(confirm)
-    if (answer) {
-        playGame()
-    } else {
-        alert('Ok. Maybe next time.')
-    } 
-}
+// game = () => {
+//     // Ask user if they want to play
+//     const answer = confirm('Do you want to play \nRock Paper Scissor game?')
+//     console.log(confirm)
+//     if (answer) {
+//         playGame()
+//     } else {
+//         alert('Ok. Maybe next time.')
+//     } 
+// }
 
 exit = () => {
     alert('BY!!!!')
