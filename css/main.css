@@ -1,0 +1,77 @@
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* Color scheme */
+:root {
+    --blackish: #202020;    
+    --dark-grey: #3F3F3F;    
+    --medium-grey: #707070;    
+    --egg-yellow: #FFE06C;    
+    --white: #FFFFFF;
+}
+
+html {
+    font-family: 'Sarala', sans-serif;
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.bg-div {
+    background-color: var(--medium-grey);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    
+}
+
+.title {
+    background-color: var(--egg-yellow);
+    color: var(--blackish);
+    letter-spacing: .2em;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* transform: rotate(-35deg); */
+}
+
+.player-choice {
+    font-size: 3.5em;
+    justify-content: space-between;
+    width: 60%;
+}
