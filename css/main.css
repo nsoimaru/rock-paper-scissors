@@ -50,28 +50,30 @@ body {
     display: flex;
 }
 
-.bg-div {
-    background-color: var(--medium-grey);
+.container {
+    border: 2px solid rebeccapurple;
+    width: 80%;
+    max-width: 1200px;    
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    
+.game {
+    justify-content: center;
+    gap: 1em;
+    border: 2px solid purple;
+    margin: 3rem auto;
+}
+
+.choiche {
+    font-size: 6em;
+}
+
+.game button {
+    text-decoration: none;
+    /* border: none; */
+    background: none;
 }
 
 .title {
-    background-color: var(--egg-yellow);
-    color: var(--blackish);
-    letter-spacing: .2em;
+    border: 2px solid yellow;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    /* transform: rotate(-35deg); */
-}
-
-.player-choice {
-    font-size: 3.5em;
-    justify-content: space-between;
-    width: 60%;
 }
