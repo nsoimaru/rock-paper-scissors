@@ -60,7 +60,6 @@ body {
 }
 
 .container {
-    border: 2px solid rebeccapurple;
     width: 80%;
     max-width: 1200px;    
 }
@@ -68,17 +67,16 @@ body {
 .game {
     justify-content: center;
     gap: 1em;
-    border: 2px solid purple;
     margin: 3rem auto;
 }
 
 .choice {
-    font-size: 6em;
+    font-size: 16vw;
 }
 
 .game button {
     text-decoration: none;
-    /* border: none; */
+    border: none;
     background: none;
 }
 
@@ -88,7 +86,6 @@ body {
 }
 
 .result {
-    border: 2px solid pink;
     width: 80%;
     margin: 0 auto;
     flex-basis: 33.33333%;
