@@ -13,13 +13,27 @@
 </head>
 <body>
     <div class="container center">
-        <div class="bg-div">
+        <div class="hero">
             <h1 class="title">Welcome to RPS game</h1>
         </div>
         <div class="game row">
-            <button id="rock" class="choiche" value="rock">🤛</button>
-            <button id="paper" class="choiche" value="paper">🤚</button>
-            <button id="scissors" class="choiche" value="scissors">✌️</button>
+            <button id="rock" class="choice" value="rock">🤛</button>
+            <button id="paper" class="choice" value="paper">🤚</button>
+            <button id="scissors" class="choice" value="scissors">✌️</button>
+        </div>
+        <div class="result row">
+            <div class="result-show">You chose: <span class="player-selection">player selection</span></div>
+            <div class="result-show">Computer chose: <span class="computer-selection">computer selection</span></div>
+            <div class="result-show"><span class="winner-show">winner</span></div>
+        </div>
+        <div class="result row">
+            <div class="result-show">Your score: <span class="player-score">player score</span></div>
+            <div class="result-show">Computer score: <span class="computer-score">computer score</span></div>
+            <div class="result-show"><span class="round-show">round</span></div>
+        </div>
+        <div class="play-again row">
+            <button class="hidden" id="playAgainButton">Play another round?</button>
+            <button class="hidden" id="quit">Quit the game</button>
         </div>
     </div>
 </body>

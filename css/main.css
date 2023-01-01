@@ -50,6 +50,15 @@ body {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .container {
     border: 2px solid rebeccapurple;
     width: 80%;
@@ -63,7 +72,7 @@ body {
     margin: 3rem auto;
 }
 
-.choiche {
+.choice {
     font-size: 6em;
 }
 
@@ -76,4 +85,13 @@ body {
 .title {
     border: 2px solid yellow;
     text-align: center;
+}
+
+.result {
+    border: 2px solid pink;
+    width: 80%;
+    margin: 0 auto;
+    flex-basis: 33.33333%;
+    align-items: center;
+    gap: 2em;
 }
