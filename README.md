@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Odin first java script challenge.
+## Odin first java script challenge.

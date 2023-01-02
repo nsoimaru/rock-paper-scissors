@@ -32,7 +32,7 @@ playRound = (e) => {
     if(round < 5) {
         checkWinner();
     } else {        
-        if (player === 'rock' || player === 'paper' || player === scissors) {
+        if (player === 'rock' || player === 'paper' || player === 'scissors') {
             playerChoiceButton = buttons.forEach(button => {
             button.classList.add('disabled'); 
                             
@@ -76,11 +76,7 @@ checkWinner = () => {
     } else {
         winner = 'Computer win!';
         computerScore++;
-    }
-
-    console.log(player);
-    console.log(computer);
-  
+    }  
     round++;
 
     // const resultDiv = document.querySelector('.result');
