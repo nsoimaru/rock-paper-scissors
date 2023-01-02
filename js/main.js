@@ -52,31 +52,35 @@ playRound = (e) => {
             }
         }
     }
-    // return player;
+    return player;
 }
 
 checkWinner = () => {
     let winner = '';
     let computer = computerChoice();
 
-    if (player == computer) {
-        winner = 'Tie game!';
+    if (player === computer) {
+        winner = "Tie game!";
     }
-    else if (player == 'rock' && computer == 'paper') {
-        winner = 'Computer win!';
-        computerScore++;
-    }
-    else if (player == 'paper' && computer == 'scissors') {
-        winner = 'Computer win!';
-        computerScore++;
-    }
-    else if (player == 'scissors' && computer == 'rock') {
-        winner = 'Computer win!';
-        computerScore++;
-    } else {
+    else if (player === 'scissors' && computer === 'paper') {
         winner = 'Player win!';
         playerScore++;
     }
+    else if (player === 'paper' && computer === 'rock') {
+        winner = 'Player win!';
+        playerScore++;
+    }
+    else if (player === 'rock' && computer === 'scissors') {
+        winner = 'Player win!';
+        playerScore++;
+    } else {
+        winner = 'Computer win!';
+        computerScore++;
+    }
+
+    console.log(player);
+    console.log(computer);
+  
     round++;
 
     // const resultDiv = document.querySelector('.result');
@@ -87,7 +91,7 @@ checkWinner = () => {
 
     const computerSelection = document.querySelector('.result .result-show .computer-selection');
     computerSelection.classList.add('result');
-    computerSelection.innerText = `${computerChoice()}`;
+    computerSelection.innerText = `${computer}`;
     
     const winnerShow = document.querySelector('.result .result-show .winner-show');
     winnerShow.classList.add('result');
