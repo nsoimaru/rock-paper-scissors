@@ -60,37 +60,22 @@ checkWinner = () => {
     let computer = computerChoice();
 
     if (player == computer) {
-        winner = 'Tie';
-        console.log(player);
-        console.log(computer);
-        console.log(winner);
+        winner = 'Tie game!';
     }
     else if (player == 'rock' && computer == 'paper') {
         winner = 'Computer win!';
         computerScore++;
-        console.log(player);
-        console.log(computer);
-        console.log(winner);
     }
     else if (player == 'paper' && computer == 'scissors') {
         winner = 'Computer win!';
         computerScore++;
-        console.log(player);
-        console.log(computer);
-        console.log(winner);
     }
     else if (player == 'scissors' && computer == 'rock') {
         winner = 'Computer win!';
         computerScore++;
-        console.log(player);
-        console.log(computer);
-        console.log(winner);
     } else {
         winner = 'Player win!';
         playerScore++;
-        console.log(player);
-        console.log(computer);
-        console.log(winner);
     }
     round++;
 
