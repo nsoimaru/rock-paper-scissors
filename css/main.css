@@ -70,6 +70,15 @@ body {
     margin: 3rem auto;
 }
 
+.choice:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.choice:active {
+    scale: .9;
+}
+
 .choice {
     font-size: 16vw;
 }
@@ -81,14 +90,32 @@ body {
 }
 
 .title {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
 .result {
     width: 80%;
     margin: 0 auto;
-    flex-basis: 33.33333%;
-    align-items: center;
-    gap: 2em;
+}
+
+.play-again {
+    margin-top: 1em;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn {
+    padding: 1em .75em;
+    border-radius: .5em;
+    font-weight: 800;
+    font-stretch: wider;
+}
+
+.btn-success {
+    background: green;
+}
+
+.btn-quit {
+    background: rgb(233, 159, 159);
 }

@@ -26,6 +26,9 @@ playGame = () => {
 }
 
 playRound = (e) => { 
+    answer = document.getElementsByClassName('result');
+    answer[0].classList.remove('hidden');
+    
     // Play five rounds
     player = e.target.id;
     // player = player.toString();
